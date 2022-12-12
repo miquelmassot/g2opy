@@ -8,8 +8,7 @@ This is a python binding of graph optimization C++ framework [g2o](https://githu
 
 
 ## Requirements
-* [C++ requirements](#g2oRequirements).   
-([pybind11](https://github.com/pybind/pybind11) is also required, but it's built in this repository, you don't need to install) 
+Follow the instructions on https://github.com/uoip/g2opy on how to install requirements.
 
 
 ## Installation
