@@ -296,3 +296,7 @@ ADD_SUBDIRECTORY(g2o)
 
 ADD_SUBDIRECTORY(contrib)   # added for python binding
 ADD_SUBDIRECTORY(python)   # added for python binding
+
+#install(TARGETS g2o COMPONENT python LIBRARY DESTINATION "$PYTHON_LIBRARY_DIR")
+target_compile_definitions(g2o
+                           PRIVATE VERSION_INFO=${EXAMPLE_VERSION_INFO})

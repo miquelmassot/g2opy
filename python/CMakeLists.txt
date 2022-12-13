@@ -32,3 +32,6 @@ target_link_libraries(g2o PRIVATE
     types_slam3d_addons
     contrib
 )
+
+target_compile_definitions(g2o
+                           PRIVATE VERSION_INFO=${EXAMPLE_VERSION_INFO})
