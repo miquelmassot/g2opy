@@ -11,7 +11,26 @@ This is a python binding of graph optimization C++ framework [g2o](https://githu
 Follow the instructions on https://github.com/uoip/g2opy on how to install requirements.
 
 
-## Installation
+## Use with docker
+Clone this repository with github desktop or plain git
+```
+git clone git@github.com:miquelmassot/g2opy.git
+```
+
+Build the docker image
+```
+docker build -t miquelmassot/g2opy:latest.
+```
+
+Then, run the docker image with a user "ubuntu" and password "ubuntu" run the following
+```
+docker run --rm -it -p 6080:80 -e USER=ubuntu -v ${PWD}/project:/home/ubuntu/project -p 5900:5900 miquelmassot/g2opy:latest
+```
+
+To use it, open a new browser tab to http://127.0.0.1:6080 
+
+
+## Installation from source
 ```
 git clone https://github.com/uoip/g2opy.git
 cd g2opy
